@@ -61,4 +61,8 @@ jobs:
           package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9B3F8A13CE9E4BA493421482363F16C3 }}
       - name: 'Start Node.js App'
+<<<<<<< HEAD
         run: npm start
+=======
+        run: npm start
+>>>>>>> 0cc60eafea49c4bfc9dc097774fc2839a8e1a71b
