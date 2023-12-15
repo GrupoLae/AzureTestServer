@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     };
 
     // Renderiza la plantilla 'index' y pasa los datos como un objeto
-    res.render('hojaVisita', datos);
+    res.render('index', datos);
 });
 app.get('/generate-pdf', async (req, res) => {
 
