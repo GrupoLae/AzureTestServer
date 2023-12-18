@@ -11,14 +11,15 @@ app.use(express.static('public'));
 // Ruta para renderizar la plantilla
 app.get('/', (req, res) => {
 
-    const datos = {
-        titulo: 'Mi Página EJS',
-        mensaje: '¡Bienvenido a mi página con datos, TONTO EL QUE LO LEA!',
-        nombre: 'PAKITO'
-    };
+    // const datos = {
+    //     titulo: 'Mi Página EJS',
+    //     mensaje: '¡Bienvenido a mi página con datos, TONTO EL QUE LO LEA!',
+    //     nombre: 'PAKITO'
+    // };
 
-    // Renderiza la plantilla 'index' y pasa los datos como un objeto
-    res.render('index', datos);
+    // // Renderiza la plantilla 'index' y pasa los datos como un objeto
+    // res.render('index', datos);
+    res.send({message:"AHHHHHHH"});
 });
 app.get('/generate-pdf', async (req, res) => {
 
